@@ -1,4 +1,7 @@
-import './App.css';
+import React from 'react';
+import './App.css'
+
+import { Navbar } from './components'
 
 // Components :
 // - Navbar
@@ -11,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-
+      <Navbar />
     </div>
   );
 }
