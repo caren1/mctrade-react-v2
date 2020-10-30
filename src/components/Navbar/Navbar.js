@@ -8,11 +8,12 @@ import {
     NavbarLinksContainer,
     TopLinks,
     LinkItem,
+    CallButton,
     Line,
     BotLinks
 } from './Navbar.elements.js'
 
-// import { Button } from '../../components'
+// import { Button } from '../components'
 
 const Navbar = () => {
     return (
@@ -30,7 +31,9 @@ const Navbar = () => {
                             <LinkItem>
                             (+48) 572 675 106
                             </LinkItem>
-                            {/* <Button text='Zadzwoń' type='submit'/> */}
+                            <CallButton>
+                                Zadzwoń
+                            </CallButton>
                         </TopLinks>
                         <Line></Line>
                         <BotLinks>
