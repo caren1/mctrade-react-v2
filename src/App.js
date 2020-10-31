@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 
-import { Navbar, Info } from './components'
+import { Navbar, Info, Offer } from './components'
 
 // Components :
 // - Navbar
@@ -24,6 +24,9 @@ function App() {
         </section>
         <section>
           <Info />
+        </section>
+        <section>
+          <Offer />
         </section>
       </main>
     </div>

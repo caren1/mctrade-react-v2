@@ -23,6 +23,8 @@ color: #E0B084;
 font-size: 75px;
 font-family: 'Lora', serif;
 margin-bottom: 35px;
+font-weight: 500;
+
 `
 
 export const InfoSubheading = styled.p`
