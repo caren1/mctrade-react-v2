@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 export const Nav = styled.nav `
-background-color: #000000;
 min-height: 100px;
 margin: 0;
 font-family: 'Lora', serif;
+position: absolute;
+top: 0;
+z-index: 999;
+min-width: 100%;
 
 @media screen and (max-width: 750px) {
     display: none;
@@ -43,6 +46,8 @@ export const LinkItem = styled.a`
 color: #ffffff;
 padding: 1em;
 font-size: 16px;
+text-decoration: none;
+cursor: pointer;
 
 &:hover {
     color: #E0B084;
@@ -59,6 +64,8 @@ margin-left: 1em;
 color: white;
 font-family: 'Lora', serif;
 font-size: 16px;
+cursor: pointer;
+
 
 &:hover {
     background-color: #E0B084;

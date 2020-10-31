@@ -15,6 +15,14 @@ function App() {
   return (
     <div className="app">
       <Navbar />
+      <main>
+        <section>
+          <div class="intro">
+            <h1 className="heading">MC Trade Sp. z o.o.</h1>
+            <p className="subheading">Usługi Ogólnobudowlane</p>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }

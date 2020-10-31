@@ -25,33 +25,17 @@ const Navbar = () => {
                     </NavbarImageContainer>
                     <NavbarLinksContainer>
                         <TopLinks>
-                            <LinkItem>
-                            kontakt@mc-trade.pl
-                            </LinkItem>
-                            <LinkItem>
-                            (+48) 572 675 106
-                            </LinkItem>
-                            <CallButton>
-                                Zadzwoń
-                            </CallButton>
+                            <LinkItem>kontakt@mc-trade.pl</LinkItem>
+                            <LinkItem>(+48) 572 675 106</LinkItem>
+                            <CallButton>Zadzwoń</CallButton>
                         </TopLinks>
                         <Line></Line>
                         <BotLinks>
-                            <LinkItem>
-                                Firma
-                            </LinkItem>
-                            <LinkItem>
-                                Projekty
-                            </LinkItem>
-                            <LinkItem>
-                                Oferta
-                            </LinkItem>
-                            <LinkItem>
-                                Praca
-                            </LinkItem>
-                            <LinkItem>
-                                Kontakt
-                            </LinkItem>
+                            <LinkItem href="/">Firma</LinkItem>
+                            <LinkItem>Projekty</LinkItem>
+                            <LinkItem>Oferta</LinkItem>
+                            <LinkItem>Praca</LinkItem>
+                            <LinkItem>Kontakt</LinkItem>
                         </BotLinks>
                     </NavbarLinksContainer>
                 </NavbarContainer>
