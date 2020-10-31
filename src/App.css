@@ -9,7 +9,7 @@
 .intro {
     height: 100vh;
     background-image: url("./images/intro-background.png");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;

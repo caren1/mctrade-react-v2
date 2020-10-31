@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Nav = styled.nav `
+/* background-color: #000000; */
 min-height: 100px;
 margin: 0;
 font-family: 'Lora', serif;

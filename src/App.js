@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 
-import { Navbar } from './components'
+import { Navbar, Info } from './components'
 
 // Components :
 // - Navbar
@@ -21,6 +21,9 @@ function App() {
             <h1 className="heading">MC Trade Sp. z o.o.</h1>
             <p className="subheading">Usługi Ogólnobudowlane</p>
           </div>
+        </section>
+        <section>
+          <Info />
         </section>
       </main>
     </div>
