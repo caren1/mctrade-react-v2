@@ -21,12 +21,11 @@ function App() {
             <h1 className="heading">MC Trade Sp. z o.o.</h1>
             <p className="subheading">Usługi Ogólnobudowlane</p>
           </div>
-          <div class="intro-mobile">
+          <div className="intro-mobile">
             <div className="logo-container">
               <img src="../assets/icons/mct-logo.svg" alt="main-logo" />
             </div>
-            <div class="arrow">
-                
+            <div className="arrow">
                 <span></span>
             </div>
           </div>

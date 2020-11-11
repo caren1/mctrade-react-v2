@@ -1,7 +1,14 @@
 import React from 'react'
-import { SingleOfferContainer, OfferIcon, OfferTitle, OfferLink, Test } from './SingleOffer.elements'
+import { SingleOfferContainer, OfferTitle, OfferLink, IconWrapper } from './SingleOffer.elements'
 
-const SingleOffer = ({ icon, title, onClick }) => {
+import { ReactComponent as Crane } from '../../../icons/crane.svg';
+
+
+const SingleOffer = ( props ) => {
+
+    // console.log(props.offer);
+    const { id, icon, title } = props.offer;
+
     return (
         // <SingleOfferContainer>
         //     <OfferIcon src={icon}></OfferIcon>
@@ -9,9 +16,11 @@ const SingleOffer = ({ icon, title, onClick }) => {
         //     <OfferLink onClick={onclick}>więcej</OfferLink>
         // </SingleOfferContainer>
         <SingleOfferContainer>
-             {/* <OfferIcon></OfferIcon> */}
-             <Test>X</Test>
-             <OfferTitle>Usługi Ogólnobudowlane</OfferTitle>
+            <IconWrapper>
+             <img src={icon} alt="offer-icon" />
+             {/* <OfferIcon src={icon} alt="offer-icon"></OfferIcon> */}
+            </IconWrapper>
+            <OfferTitle>{title}</OfferTitle>
              <OfferLink>więcej</OfferLink>
         </SingleOfferContainer>
     )

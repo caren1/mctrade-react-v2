@@ -1,0 +1,78 @@
+[
+   {
+      "id":1,
+      "icon":"../assets/icons/measuring.svg",
+      "title":"Usługi Ogólnobudowlane",
+      "details":[
+         "Roboty ziemne (wykopy, odwierty, drenaże, utwardzanie dróg)",
+         "Izolacje fundamentów",
+         "Wykończenia tarasów i balkonów",
+         "Zewnętrzne elementy dekoracyjne",
+         "Aranżacja ogrodu i otoczenia domu (mała arichitektura psoesji prywatynch. Tarasy, chodniki, schody, wjazdy, alejki i drogi osiedlowe)",
+         "Roboty brukarskie",
+         "Przygotowanie i wykonanie podjazdów",
+         "Ogrodzenia, bramy wjazdowe",
+         "Rozbiórka obiektów budowlanych",
+         "Ocieplanie dachów",
+         "Ocieplenia i elewacje budynków",
+         "Deski elewacyjne"
+      ]
+   },
+   {
+      "id":2,
+      "icon":"../assets/icons/paint.svg",
+      "title":"Wykończenia",
+      "details":[
+         "Kompleksowe remonty wnętrz",
+         "Układanie płytek / podłóg",
+         "Montaż ceramiki / baterii",
+         "Montaż oświetlenia",
+         "Malowanie i tapetowanie oraz szpachlowanie",
+         "Podwieszanie sufitów (dekoracyjne)",
+         "Montaż stolarki okiennej, drzwiowej oraz rolet i parapetów",
+         "Cekolowanie, suche zabudowy oraz gładzie ze ścianki G/K",
+         "Instalacje elektryczne",
+         "Instalacje hydrualiczne",
+         "Malowanie ręczne oraz ciśnieniowe",
+         "Monitoring",
+         "Kosztorysowanie, wycena materiałów oraz doradztwo techniczne",
+         "Sztukateria domowa"
+      ]
+   },
+   {
+      "id":3,
+      "icon":"../assets/icons/hammer.svg",
+      "title":"Prace konserwatorskie",
+      "details":[
+         "Renowacja obiektów zabytkowych (piaskowanie)",
+         "Praca przy elewacjach ceglanych oraz kamiennych",
+         "Sztukateria zabytkowa (rekonstrukcja detali sztukatorskich, stiuków)",
+         "Malowanie pomieszczeń",
+         "Zabytkowe wyprawy tynkarskie",
+         "Opinie techniczne, doradztwo materiałowe"
+      ]
+   },
+   {
+      "id":4,
+      "icon":"../assets/icons/roof.svg",
+      "title":"Fotowoltaika",
+      "details":[
+         "Przygotowanie projektu inwestycyjnego",
+         "Dostawa sprzętu",
+         "Montaż instalacji fotowoltaicznych",
+         "Sporządzenie dokumentacji wykonawczej i po wykonawczej",
+         "Przyłączenie i odbiór przez operatora sieci elektroenergetycznej",
+         "Serwis instalacji fotowoltaicznych"
+      ]
+   },
+   {
+      "id":5,
+      "icon":"../assets/icons/search.svg",
+      "title":"Pośrednictwo i rekrutacja",
+      "details":[
+         "Pomoc w zatrudnieniu",
+         "Praca w Niemczech",
+         "Rekrutacja pracowników"
+      ]
+   }
+]

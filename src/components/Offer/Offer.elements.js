@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const OfferContainer = styled.div`
 height: 100%;
 background-color: #041B2D;
-padding: 2em;
+padding: 2em 1em;
 `
 
 
@@ -20,7 +20,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-max-width: 70%;
+max-width: 80%;
 margin: auto;
 
 `
