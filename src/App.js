@@ -16,10 +16,19 @@ function App() {
     <div className="app">
       <Navbar />
       <main>
-        <section>
-          <div class="intro">
+        <section className="intro-section">
+          <div className="intro">
             <h1 className="heading">MC Trade Sp. z o.o.</h1>
             <p className="subheading">Usługi Ogólnobudowlane</p>
+          </div>
+          <div class="intro-mobile">
+            <div className="logo-container">
+              <img src="../assets/icons/mct-logo.svg" alt="main-logo" />
+            </div>
+            <div class="arrow">
+                
+                <span></span>
+            </div>
           </div>
         </section>
         <section>

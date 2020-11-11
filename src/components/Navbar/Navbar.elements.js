@@ -10,7 +10,7 @@ top: 0;
 z-index: 999;
 min-width: 100%;
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 765px) {
     display: none;
 }
 `
