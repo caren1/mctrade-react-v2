@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 .intro {
     height: 100vh;
     background-image: url("./images/intro-background.png");
@@ -86,6 +95,22 @@
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+@keyframes willworklikethis {
+    0% {
+        opacity: 0;
+        transform: rotate(135deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(135deg) translate(20px, 20px);
     }
 }
 

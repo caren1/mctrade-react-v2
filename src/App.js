@@ -1,7 +1,16 @@
 import React from 'react';
 import './App.css'
 
-import { Navbar, Info, Offer } from './components'
+import { Navbar, Info, Offer, SingleOfferDetails } from './components'
+import offerJSONData from './mct-offer.json';
+const example1 = offerJSONData[0];
+const example2 = offerJSONData[1];
+const example3 = offerJSONData[2];
+const example4 = offerJSONData[3];
+const example5 = offerJSONData[4];
+
+console.log(example1);
+
 
 // Components :
 // - Navbar
@@ -35,6 +44,13 @@ function App() {
         </section>
         <section>
           <Offer />
+        </section>
+        <section>
+          <SingleOfferDetails />
+          {/* <SingleOfferDetails offer={example2}/>
+          <SingleOfferDetails offer={example3}/>
+          <SingleOfferDetails offer={example4}/>
+          <SingleOfferDetails offer={example5}/> */}
         </section>
       </main>
     </div>

@@ -41,7 +41,6 @@ font-size: 7.5em;
 font-family: 'Lora', serif;
 margin-bottom: 0.5em;
 font-weight: 500;
-
 `
 
 export const InfoSubheading = styled.p`

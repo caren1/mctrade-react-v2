@@ -15,11 +15,6 @@ const Offer = () => {
                 {offerDataDetails.map((offer) => (
                     <SingleOffer key={offer.id} offer={offer} />
                 ))}
-                {/* <SingleOffer />
-                <SingleOffer />
-                <SingleOffer />
-                <SingleOffer />
-                <SingleOffer /> */}
             </Offers>
         </OfferContainer>
     )
