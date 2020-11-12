@@ -1,10 +1,14 @@
 import React from 'react'
-import { NavbarContainer, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan } from './SingleOfferDetails.elements'
+import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, BottomDetails, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan } from './SingleOfferDetails.elements'
 
 import offerJSONData from '../../../../mct-offer.json';
 const example = offerJSONData[0];
 
-const SingleOfferDetails = (props) => {
+const SingleOfferDetails = ({ offer }) => {
+    // console.log(offer);
+
+    const { title, icon, details } = offer;
+
     return (
         <OfferDetails>
             <NavbarContainer>
@@ -18,25 +22,32 @@ const SingleOfferDetails = (props) => {
                     <ArrowContainer>
                         <Arrow></Arrow>
                     </ArrowContainer>
-                    <IconWrapper>
-                        <img src={example.icon} alt="offer-icon" />
-                    </IconWrapper>
-                    <DetailsHeading>{example.title}</DetailsHeading>
+                    <IconDetails>
+                        <IconWrapper>
+                            <img src={icon} alt="offer-icon" />
+                        </IconWrapper>
+                        <DetailsHeading>{title}</DetailsHeading>
+                    </IconDetails>
                 </TopDetails>
-                <DetailsList>
-                    {/* <ListItem>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, doloremque?</ListItem>
-                    <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
-                    <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                    <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                    <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                    <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                    <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
-                    <ListItem>Lorem ipsum dolor sit amet.</ListItem> */}
-                    
-                    {example.details.map((offerDetail) => (
-                        <ListItem><ListItemSpan>{offerDetail}</ListItemSpan></ListItem>
-                    ))}
-                </DetailsList>
+                <BottomDetails>
+                    <BottomListContainer>
+                        <DetailsList>
+                            {/* <ListItem>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, doloremque?</ListItem>
+                            <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
+                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
+                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
+                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
+                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
+                            <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
+                            <ListItem>Lorem ipsum dolor sit amet.</ListItem> */}
+                            
+                            {details.map((offerDetail, i) => (
+                                <ListItem key={i}><ListItemSpan>{offerDetail}</ListItemSpan></ListItem>
+                            ))}
+                        </DetailsList>
+                    </BottomListContainer>
+    
+                </BottomDetails>
             </DetailsContainer>
         </OfferDetails>
     )

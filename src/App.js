@@ -9,7 +9,7 @@ const example3 = offerJSONData[2];
 const example4 = offerJSONData[3];
 const example5 = offerJSONData[4];
 
-console.log(example1);
+// console.log(example1);
 
 
 // Components :
@@ -46,11 +46,11 @@ function App() {
           <Offer />
         </section>
         <section>
-          <SingleOfferDetails />
-          {/* <SingleOfferDetails offer={example2}/>
-          <SingleOfferDetails offer={example3}/>
-          <SingleOfferDetails offer={example4}/>
-          <SingleOfferDetails offer={example5}/> */}
+          <SingleOfferDetails offer={example1}/> 
+          {/* <SingleOfferDetails offer={example2}/> */}
+          {/* <SingleOfferDetails offer={example3}/> */}
+          {/* <SingleOfferDetails offer={example4}/> */}
+          {/* <SingleOfferDetails offer={example5}/> */}
         </section>
       </main>
     </div>

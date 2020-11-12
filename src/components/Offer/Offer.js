@@ -5,7 +5,7 @@ import SingleOffer from './SingleOffer/SingleOffer'
 import offerDataDetails from '../../mct-offer.json'
 // - Offer -> SingleOffer -> SingleOfferDetails
 
-console.log(offerDataDetails);
+// console.log(offerDataDetails);
 
 const Offer = () => {
     return (
