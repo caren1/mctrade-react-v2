@@ -9,6 +9,8 @@ const Projects = () => {
             <Line></Line>
             <Title>Nasze realizacje</Title>
             <SingleProject />
+            <SingleProject />
+            <SingleProject />
         </ProjectsContainer>
     )
 }

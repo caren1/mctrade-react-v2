@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 
-import { Navbar, Info, Offer, Projects, SingleOfferDetails } from './components'
+import { Navbar, Info, Offer, Projects, SingleProjectDetails, SingleOfferDetails } from './components'
 import offerJSONData from './mct-offer.json';
 const example1 = offerJSONData[0];
 const example2 = offerJSONData[1];
@@ -54,6 +54,9 @@ function App() {
         {/* </section> */}
         <section>
           <Projects />
+        </section>
+        <section>
+          <SingleProjectDetails />
         </section>
       </main>
     </div>

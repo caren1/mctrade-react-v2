@@ -23,7 +23,7 @@ const SingleOfferDetails = ({ offer }) => {
                     <IconDetails>
                     <ArrowContainer>
                     <Arrow></Arrow>
-                </ArrowContainer>
+                    </ArrowContainer>
                         <IconWrapper>
                             <img src={icon} alt="offer-icon" />
                         </IconWrapper>
