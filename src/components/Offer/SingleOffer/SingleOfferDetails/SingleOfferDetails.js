@@ -19,35 +19,28 @@ const SingleOfferDetails = ({ offer }) => {
             </NavbarContainer>
             <DetailsContainer>
                 <TopDetails>
-                    <ArrowContainer>
-                        <Arrow></Arrow>
-                    </ArrowContainer>
+                
                     <IconDetails>
+                    <ArrowContainer>
+                    <Arrow></Arrow>
+                </ArrowContainer>
                         <IconWrapper>
                             <img src={icon} alt="offer-icon" />
                         </IconWrapper>
                         <DetailsHeading>{title}</DetailsHeading>
                     </IconDetails>
+                    
                 </TopDetails>
-                <BottomDetails>
-                    <BottomListContainer>
+                <BottomListContainer>
                         <DetailsList>
-                            {/* <ListItem>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, doloremque?</ListItem>
-                            <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
-                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                            <ListItem>Lorem ipsum dolor sit amet.</ListItem>
-                            <ListItem>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos repellat neque ipsum dolorem esse impedit.</ListItem>
-                            <ListItem>Lorem ipsum dolor sit amet.</ListItem> */}
-                            
-                            {details.map((offerDetail, i) => (
-                                <ListItem key={i}><ListItemSpan>{offerDetail}</ListItemSpan></ListItem>
+                        {details.map((offerDetail, i) => (
+                            <ListItem key={i}>
+                                <ListItemSpan>{offerDetail}</ListItemSpan>
+                            </ListItem>
                             ))}
                         </DetailsList>
                     </BottomListContainer>
-    
-                </BottomDetails>
+                
             </DetailsContainer>
         </OfferDetails>
     )

@@ -6,7 +6,8 @@ padding: 3em;
 background-color: #041B2D;
 
 @media screen and (max-width: 600px) {
-    font-size: 14px;
+    font-size: 15px;
+    padding: 1em;
 }
 `
 
@@ -39,13 +40,14 @@ export const NavLogo = styled.img `
 export const DetailsContainer = styled.div `
 display: flex;
 flex-direction: column;
-max-width: 100%;
+width: 100%;
 font-family: 'Poppins', sans-serif;
 position: relative;
 `
 
 export const TopDetails = styled.div `
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
@@ -64,9 +66,17 @@ align-items: center;
 `
 
 export const ArrowContainer = styled.div `
-padding: 2em;
-margin-right: 2em;
+padding-right: 2em;
 cursor: pointer;
+max-width: 20%;
+
+@media screen and (max-width: 800px) {
+    padding:0;
+    position: absolute;
+max-width: 20%;
+left: 10%;
+z-index: 999;
+}
 `
 export const Arrow = styled.span `
  display: block;
@@ -79,9 +89,9 @@ export const Arrow = styled.span `
 `
 
 export const IconWrapper = styled.div `
-max-height: 70px;
-max-width: 70px;
-margin-right: 2em;
+max-height: 80px;
+max-width: 80px;
+padding: 1em;
 
 img {
     fill: #E0B084;
@@ -91,19 +101,22 @@ img {
     }
 `
 
-export const BottomDetails = styled.div `
-display: flex;
-justify-content: center;
-align-items: center;
-max-width: 100%;
-height: 100%;
-`
-
 export const BottomListContainer = styled.div`
 max-width: 60%;
+min-width: 500px;
+margin: auto 40% auto 35%;
 
-@media screen and (max-width: 800px) {
-max-width: 90%;
+@media screen and (max-width: 860px) {
+min-width: 100%;
+max-width: 80%;
+margin: auto auto;
+
+display: flex;
+align-items: center;
+justify-content: center;
+line-height: 2.5;
+padding: 2em;
+/* text-align: center; */
 }
 `
 
@@ -112,13 +125,21 @@ export const DetailsHeading = styled.h2 `
 font-size: 2em;
 color: #ffffff;
 font-weight: 300;
+
+@media screen and (max-width: 800px) {
+    text-align: center;
+}
 `
 
 export const DetailsList = styled.ul `
 /* max-width: 50%; */
 /* margin: auto auto; */
 line-height: 1.7;
-margin-left: 5em;
+@media screen and (max-width: 500px) {
+line-height: 2;
+font-size: 14px;
+}
+/* margin-left: 5em; */
 
 /* list-style: none; */
 `
