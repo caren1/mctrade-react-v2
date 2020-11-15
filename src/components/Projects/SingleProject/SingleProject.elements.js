@@ -8,7 +8,7 @@ align-items: center;
 min-height: 200px;
 max-height: 100%;
 width: 60%;
-padding: 2em;
+padding: 1em 2em;
 margin: 2em auto;
 border: 1px solid #E0B084;
 cursor: pointer;
@@ -21,6 +21,10 @@ cursor: pointer;
 flex-direction: column-reverse;
 text-align: center;
 width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    padding: 1em 1em;
 }
 `
 

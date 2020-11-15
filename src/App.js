@@ -46,7 +46,7 @@ function App() {
           <Offer />
         </section>
         {/* <section> */}
-          {/* <SingleOfferDetails offer={example1}/>  */}
+          <SingleOfferDetails offer={example1}/> 
           {/* <SingleOfferDetails offer={example2}/> */}
           {/* <SingleOfferDetails offer={example3}/> */}
           {/* <SingleOfferDetails offer={example4}/> */}
@@ -58,6 +58,12 @@ function App() {
         <section>
           <SingleProjectDetails />
         </section>
+        <section>
+          <Info />
+        </section>
+        <footer>
+
+        </footer>
       </main>
     </div>
   );

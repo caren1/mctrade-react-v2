@@ -23,15 +23,12 @@ max-width: 65%;
 margin: 50px auto;
 font-size: 10px;
 
-@media screen and (max-width: 800px) {
-    max-width: 75%;
-    font-size: 9px;
-    text-align: center;
-}
 
 @media screen and (max-width: 800px) {
     max-width: 80%;
-    font-size: 8px;
+    font-size: 7px;
+    text-align: center;
+
 }
 
 `

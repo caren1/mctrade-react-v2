@@ -11,6 +11,10 @@ width: 230px;
 height: 200px;
 font-family: 'Poppins', sans-serif;
 margin: 3em;
+
+@media screen and (max-width: 800px) {
+justify-content: space-evenly;
+}
 `
 
 export const OfferTitle = styled.h1`
@@ -18,6 +22,10 @@ color: #ffffff;
 font-weight: 300;
 font-size: 16px;
 margin-top: 20px;
+
+@media screen and (max-width: 800px) {
+font-size: 14px;
+}
 `
 
 export const IconWrapper = styled.div`
@@ -30,6 +38,12 @@ img {
     width: 100%;
     height: 100%;
     }
+
+
+@media screen and (max-width: 800px) {
+    max-height: 60px;
+    max-width: 60px;
+}
 `
 export const OfferLink = styled.a`
 text-decoration: none;

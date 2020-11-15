@@ -27,6 +27,11 @@ font-size: 30px;
 font-family: 'Lora', serif;
 font-weight: 500;
 margin-bottom: 0.2em;
+
+@media screen and (max-width: 750px) {
+    font-size: 22px;
+    padding: 0;
+}
 `
 
 export const ProjectDate = styled.h2`
@@ -36,6 +41,10 @@ font-family: 'Lora', serif;
 font-weight: 200;
 margin-bottom: 1em;
 justify-self: flex-start;
+
+@media screen and (max-width: 750px) {
+    font-size: 16px;
+}
 `
 
 export const ProjectDetails = styled.ul`
@@ -52,6 +61,10 @@ line-height: 1.5;
 export const DetailItemSpan = styled.span`
 color: #ffffff;
 font-size: 14px;
+
+@media screen and (max-width: 750px) {
+    font-size: 12px;
+}
 
 `
 
