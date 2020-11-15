@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 export const SingleOfferContainer = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 text-align: center;
 /* border: 1px solid white; */
@@ -45,7 +46,7 @@ img {
     max-width: 60px;
 }
 `
-export const OfferLink = styled.a`
+export const OfferLink = styled(Link)`
 text-decoration: none;
 color: #E0B084;
 cursor: pointer;

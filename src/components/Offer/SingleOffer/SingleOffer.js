@@ -12,7 +12,7 @@ const SingleOffer = ({ offer } ) => {
              <img src={icon} alt="offer-icon" />
             </IconWrapper>
             <OfferTitle>{title}</OfferTitle>
-             <OfferLink>więcej</OfferLink>
+             <OfferLink to={`/offers/${id}`}>więcej</OfferLink>
         </SingleOfferContainer>
     )
 }

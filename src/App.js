@@ -1,13 +1,14 @@
 import React from 'react';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import './App.css'
 
-import { Navbar, Info, Offer, Projects, SingleProjectDetails, SingleOfferDetails } from './components'
+import { Navbar, Info, Offer, Projects, SingleProjectDetails, SingleOfferDetails, Form, SingleOffer } from './components'
 import offerJSONData from './mct-offer.json';
-const example1 = offerJSONData[0];
-const example2 = offerJSONData[1];
-const example3 = offerJSONData[2];
-const example4 = offerJSONData[3];
-const example5 = offerJSONData[4];
+// const example1 = offerJSONData[0];
+// const example2 = offerJSONData[1];
+// const example3 = offerJSONData[2];
+// const example4 = offerJSONData[3];
+// const example5 = offerJSONData[4];
 
 // console.log(example1);
 
@@ -21,7 +22,19 @@ const example5 = offerJSONData[4];
 // - Footer -> Contact Form
 
 function App() {
+
+  const offerMatch = useRouteMatch('/offers/:id');
+  const offer = offerMatch ? offerJSONData.find(offer => offer.id === Number(offerMatch.params.id)) : null;
+
+  // const projectMatch = useRouteMatch('/projects/:id');
+  // const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
+
   return (
+    <Switch>
+      <Route path="/offers/:id">
+        <SingleOfferDetails offer={offer}/>
+      </Route>
+    
     <div className="app">
       <Navbar />
       <main>
@@ -45,13 +58,6 @@ function App() {
         <section>
           <Offer />
         </section>
-        {/* <section> */}
-          <SingleOfferDetails offer={example1}/> 
-          {/* <SingleOfferDetails offer={example2}/> */}
-          {/* <SingleOfferDetails offer={example3}/> */}
-          {/* <SingleOfferDetails offer={example4}/> */}
-          {/* <SingleOfferDetails offer={example5}/> */}
-        {/* </section> */}
         <section>
           <Projects />
         </section>
@@ -62,10 +68,11 @@ function App() {
           <Info />
         </section>
         <footer>
-
+          <Form />
         </footer>
       </main>
     </div>
+    </Switch>
   );
 }
 

@@ -24,9 +24,9 @@ const Footer = () => {
                     <InfoItem>w@mc-trade.pl</InfoItem>
                 </InfoList>
             </FooterInfo>
-            <FooterForm>
-                
-            </FooterForm>
+            {/* <FooterForm> */}
+
+            {/* </FooterForm> */}
         </FooterContainer>
     )
 }
