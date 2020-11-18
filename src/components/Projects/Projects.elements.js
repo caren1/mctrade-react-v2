@@ -15,9 +15,9 @@ font-weight: 500;
 text-align: center;
 `
 export const Line = styled.hr`
-border: 1px solid #E0B084;
+border: 0.2px solid #E0B084;
 color: #E0B084;
 background-color: #E0B084;
-width: 50%;
+width: 10%;
 margin: 1em auto 2em auto;
 `

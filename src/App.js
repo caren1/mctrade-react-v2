@@ -4,6 +4,7 @@ import './App.css'
 
 import { Navbar, Info, Offer, Projects, SingleProjectDetails, SingleOfferDetails, Form, SingleOffer } from './components'
 import offerJSONData from './mct-offer.json';
+import infoJSONData from './mct-info.json';
 // const example1 = offerJSONData[0];
 // const example2 = offerJSONData[1];
 // const example3 = offerJSONData[2];
@@ -29,6 +30,8 @@ function App() {
   // const projectMatch = useRouteMatch('/projects/:id');
   // const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
 
+  const [ info1, info2 ] = infoJSONData;
+
   return (
     <Switch>
       <Route path="/offers/:id">
@@ -53,7 +56,7 @@ function App() {
           </div>
         </section>
         <section>
-          <Info />
+          <Info title={info1.title} text={info1.text} subtext={info1.subtext}/>
         </section>
         <section>
           <Offer />
@@ -62,13 +65,13 @@ function App() {
           <Projects />
         </section>
         <section>
-          <SingleProjectDetails />
+          {/* <SingleProjectDetails /> */}
         </section>
         <section>
-          <Info />
+          <Info title={info2.title} text={info2.text} subtext={info2.subtext}/>
         </section>
         <footer>
-          <Form />
+          {/* <Form /> */}
         </footer>
       </main>
     </div>

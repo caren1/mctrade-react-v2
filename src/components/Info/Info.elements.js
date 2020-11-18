@@ -2,18 +2,17 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
 height: 100vh;
+max-height: 100%;
 background-image: url('../../assets/images/intro-background.png');
 background-attachment: fixed;
 background-size: cover;
-/* position: relative */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: left;
-/* padding: 10em; */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     height:100%
 }
 `
@@ -28,7 +27,6 @@ font-size: 10px;
     max-width: 80%;
     font-size: 7px;
     text-align: center;
-
 }
 
 `
@@ -45,5 +43,6 @@ font-family: 'Poppins', sans-serif;
 font-weight: 300;
 font-size: 2em;
 color: #ffffff;
-line-height: 1.5;
+line-height: 1.8;
+margin-bottom: 1em;
 `
