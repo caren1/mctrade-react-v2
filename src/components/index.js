@@ -5,6 +5,5 @@ export { default as SingleOffer } from './Offer/SingleOffer/SingleOffer';
 export { default as SingleOfferDetails } from './Offer/SingleOfferDetails/SingleOfferDetails';
 export { default as Projects } from './Projects/Projects';
 export { default as SingleProjectDetails } from './Projects/SingleProjectDetails/SingleProjectDetails'
-export { default as Form } from './Form/Form'
-export { default as Footer } from './FooterComponent/FooterComponent'
+export { default as FooterComponent } from './FooterComponent/FooterComponent'
 export { default as Home } from './Home/Home'

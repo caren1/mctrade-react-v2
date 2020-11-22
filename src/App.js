@@ -5,7 +5,7 @@ import './App.css'
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 // COMPONENTS IMPORT
-import { Navbar, Home, SingleOfferDetails, Footer } from './components'
+import { Navbar, Home, SingleOfferDetails, FooterComponent } from './components'
 
 // DATA IMPORT
 import offerJSONData from './mct-offer.json';
@@ -44,7 +44,7 @@ function App() {
         <div className="app">
           <Navbar />
           <Home />
-          {/* <Footer /> */}
+          <FooterComponent />
         </div>
       </Route>
       
