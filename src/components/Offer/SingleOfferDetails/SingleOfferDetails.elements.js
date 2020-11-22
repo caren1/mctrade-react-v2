@@ -55,7 +55,7 @@ position: relative;
 padding: 1em;
 margin-bottom: 1em;
 `
-export const IconDetails = styled.div`
+export const IconDetails = styled.div `
 display: flex;
 justify-content: center;
 align-items: center;
@@ -101,12 +101,12 @@ img {
     }
 `
 
-export const BottomListContainer = styled.div`
+export const BottomListContainer = styled.div `
 max-width: 60%;
 min-width: 500px;
 margin: auto 40% auto 35%;
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 800px) {
 min-width: 100%;
 max-width: 80%;
 margin: auto auto;
@@ -116,10 +116,8 @@ align-items: center;
 justify-content: center;
 line-height: 2.5;
 padding: 2em;
-/* text-align: center; */
 }
 `
-
 
 export const DetailsHeading = styled.h2 `
 font-size: 2em;
@@ -132,16 +130,12 @@ font-weight: 300;
 `
 
 export const DetailsList = styled.ul `
-/* max-width: 50%; */
-/* margin: auto auto; */
 line-height: 1.7;
+
 @media screen and (max-width: 500px) {
 line-height: 2;
 font-size: 14px;
 }
-/* margin-left: 5em; */
-
-/* list-style: none; */
 `
 
 export const ListItem = styled.li `

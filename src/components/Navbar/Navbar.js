@@ -13,8 +13,6 @@ import {
     BotLinks
 } from './Navbar.elements.js'
 
-// import { Button } from '../components'
-
 const Navbar = () => {
     return (
         <>

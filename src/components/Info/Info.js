@@ -3,7 +3,6 @@ import './Info.elements'
 
 import { InfoContainer, InfoHeading, InfoSubheading, TextContainer } from './Info.elements'
 
-
 const Info = ({ title, text, subtext }) => {
 
     return (

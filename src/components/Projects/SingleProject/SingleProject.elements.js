@@ -17,6 +17,7 @@ cursor: pointer;
     transform: scale(1.02);
 }
 
+
 @media screen and (max-width: 1000px) {
 flex-direction: column-reverse;
 text-align: center;
@@ -43,14 +44,12 @@ display: none;
 
 export const MainImage = styled.img`
 max-width: 100%;
-/* width: 10%; */
 height: 100%;
 object-fit: cover;
 `
 
 export const SubImagesContainer = styled.div`
 display: flex;
-/* justify-content: space-between; */
 justify-content: center;
 align-items: center;
 `
@@ -64,7 +63,6 @@ margin: 10px 2px 0 2px;
 height: 70px;
 width: 70px;
 }
-/* padding: 5px; */
 `
 
 export const SubImage = styled.img`
