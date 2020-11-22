@@ -5,15 +5,18 @@ max-width: 30%;
 padding: 2em;
 line-height: 1.4;
 border-right: 2px solid #E0B084;
+transition: all 0.2s ease;
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1000px) {
     max-width: 100%;
-    /* min-width: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-right: none;
 }
 
 `

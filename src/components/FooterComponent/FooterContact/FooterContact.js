@@ -6,13 +6,12 @@ import { FooterContactContainer, ContactTitle, ContactForm, ContactInput, Submit
 
 const FooterContact = () => {
 
-    const [name, setName] = useState('')
-    const [surname, setSurname] = useState('')
-    const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
-    const [subject, setSubject] = useState('')
-    const [message, setMessage] = useState('')
-
+    const [ name, setName ] = useState('')
+    const [ surname, setSurname ] = useState('')
+    const [ phone, setPhone ] = useState('')
+    const [ email, setEmail ] = useState('')
+    const [ subject, setSubject ] = useState('')
+    const [ message, setMessage ] = useState('')
 
     init("user_l6L08efpIlEd6HRaDC2zi");
 
@@ -48,13 +47,13 @@ const FooterContact = () => {
         <FooterContactContainer>
             <ContactTitle>Kontakt</ContactTitle>
             <ContactForm onSubmit={handleSubmit}>
-                <ContactInput type="text" placeholder="Imię" name="name" value={name} onChange={(event) => setName(event.target.value)}></ContactInput>
-                <ContactInput type="text" placeholder="Nazwisko" name="surname" value={surname} onChange={(event) => setSurname(event.target.value)}></ContactInput>
-                <ContactInput type="text" placeholder="Telefon" name="phone" value={phone} onChange={(event) => setPhone(event.target.value)}></ContactInput>
-                <ContactInput type="text" placeholder="E-mail" name="email" value={email} onChange={(event) => setEmail(event.target.value)}></ContactInput>
-                <ContactInput type="text" placeholder="Temat" name="subject" value={subject} onChange={(event) => setSubject(event.target.value)}></ContactInput>
-                <ContactInput xl type="text" placeholder="Wiadomość" name="message" value={message} onChange={(event) => setMessage(event.target.value)}></ContactInput>
-                <SubmitButton type="submit" on>Wyślij</SubmitButton>
+                <ContactInput autocomplete="off" required type="text" placeholder="Imię" name="name" value={name} onChange={(event) => setName(event.target.value)}></ContactInput>
+                <ContactInput autocomplete="off" type="text" placeholder="Nazwisko" name="surname" value={surname} onChange={(event) => setSurname(event.target.value)}></ContactInput>
+                <ContactInput autocomplete="off" required type="tel" placeholder="Telefon" name="phone" value={phone} onChange={(event) => setPhone(event.target.value)}></ContactInput>
+                <ContactInput autocomplete="off" type="email" placeholder="E-mail" name="email" value={email} onChange={(event) => setEmail(event.target.value)}></ContactInput>
+                <ContactInput autocomplete="off" type="text" placeholder="Temat" name="subject" value={subject} onChange={(event) => setSubject(event.target.value)}></ContactInput>
+                <ContactInput autocomplete="off" xl type="text" placeholder="Wiadomość" name="message" value={message} required onChange={(event) => setMessage(event.target.value)}></ContactInput>
+                <SubmitButton type="submit">Wyślij</SubmitButton>
             </ContactForm>
         </FooterContactContainer>
     )

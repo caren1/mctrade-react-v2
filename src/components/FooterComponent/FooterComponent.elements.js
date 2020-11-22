@@ -8,4 +8,9 @@ background-color: #041B2D;
 display: flex;
 align-items: center;
 justify-content: center;
+
+@media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    height: 100%;
+}
 `
