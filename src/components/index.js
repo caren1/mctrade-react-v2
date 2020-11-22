@@ -6,3 +6,5 @@ export { default as SingleOfferDetails } from './Offer/SingleOffer/SingleOfferDe
 export { default as Projects } from './Projects/Projects';
 export { default as SingleProjectDetails } from './Projects/SingleProject/SingleProjectDetails/SingleProjectDetails'
 export { default as Form } from './Form/Form'
+export { default as Footer } from './FooterComponent/FooterComponent'
+export { default as Home } from './Home/Home'

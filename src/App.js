@@ -1,80 +1,53 @@
 import React from 'react';
-import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import './App.css'
 
-import { Navbar, Info, Offer, Projects, SingleProjectDetails, SingleOfferDetails, Form, SingleOffer } from './components'
+// REACT ROUTER IMPORTS
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
+
+// COMPONENTS IMPORT
+import { Navbar, Home, SingleOfferDetails, Footer } from './components'
+
+// DATA IMPORT
 import offerJSONData from './mct-offer.json';
-import infoJSONData from './mct-info.json';
 // const example1 = offerJSONData[0];
-// const example2 = offerJSONData[1];
-// const example3 = offerJSONData[2];
-// const example4 = offerJSONData[3];
-// const example5 = offerJSONData[4];
-
-// console.log(example1);
-
 
 // Components :
 // - Navbar
-// - Button
-// - Info (o firmie i szukamy współpracy)
+// - HOME : { Info, Offer, Project, Info2 }
+// - Info (O Firmie i Szukamy Współpracy - x2)
 // - Offer -> SingleOffer -> SingleOfferDetails
 // - Projects -> SingleProject -> SingleProjectDetails
 // - Footer -> Contact Form
 
 function App() {
 
+  // route matcher for single offer
   const offerMatch = useRouteMatch('/offers/:id');
   const offer = offerMatch ? offerJSONData.find(offer => offer.id === Number(offerMatch.params.id)) : null;
 
+  // route matcher for single project 
   // const projectMatch = useRouteMatch('/projects/:id');
   // const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
 
-  const [ info1, info2 ] = infoJSONData;
-
   return (
     <Switch>
+
       <Route path="/offers/:id">
         <SingleOfferDetails offer={offer}/>
       </Route>
-    
-    <div className="app">
-      <Navbar />
-      <main>
-        <section className="intro-section">
-          <div className="intro">
-            <h1 className="heading">MC Trade Sp. z o.o.</h1>
-            <p className="subheading">Usługi Ogólnobudowlane</p>
-          </div>
-          <div className="intro-mobile">
-            <div className="logo-container">
-              <img src="../assets/icons/mct-logo.svg" alt="main-logo" />
-            </div>
-            <div className="arrow">
-                <span></span>
-            </div>
-          </div>
-        </section>
-        <section>
-          <Info title={info1.title} text={info1.text} subtext={info1.subtext}/>
-        </section>
-        <section>
-          <Offer />
-        </section>
-        <section>
-          <Projects />
-        </section>
-        <section>
-          {/* <SingleProjectDetails /> */}
-        </section>
-        <section>
-          <Info title={info2.title} text={info2.text} subtext={info2.subtext}/>
-        </section>
-        <footer>
-          {/* <Form /> */}
-        </footer>
-      </main>
-    </div>
+
+      {/* <Route path="/projects/:id">
+        <SingleProjectDetails project={project}/>
+      </Route> */}
+
+      <Route path="/">
+        <div className="app">
+          <Navbar />
+          <Home />
+          {/* <Footer /> */}
+        </div>
+      </Route>
+      
     </Switch>
   );
 }

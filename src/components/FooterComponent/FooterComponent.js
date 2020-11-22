@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, NavbarImageContainer, NavLogo, FooterInfo, InfoHeading, InfoList, InfoItem } from './Footer.elements'
+import { FooterContainer, NavbarImageContainer, NavLogo, FooterInfo, InfoHeading, InfoList, InfoItem } from './FooterComponent.elements'
 
 const Footer = () => {
     return (
