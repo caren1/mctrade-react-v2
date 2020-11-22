@@ -7,4 +7,5 @@ padding: 1em;
 background-color: #041B2D;
 display: flex;
 align-items: center;
+justify-content: center;
 `

@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const FooterInfo = styled.div`
-max-width: 40%;
+max-width: 30%;
 padding: 2em;
 line-height: 1.4;
+border-right: 2px solid #E0B084;
 
 @media screen and (max-width: 700px) {
     max-width: 100%;
