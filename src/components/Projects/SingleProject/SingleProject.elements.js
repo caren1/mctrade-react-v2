@@ -15,6 +15,9 @@ cursor: pointer;
 
 :hover {
     transform: scale(1.02);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 2px 2px solid black;
+
 }
 
 
@@ -85,6 +88,10 @@ font-size: 25px;
 font-family: 'Lora', serif;
 font-weight: 500;
 margin-bottom: 1em;
+
+@media screen and (max-width: 600px) {
+    font-size: 20px;
+}
 `
 
 export const ProjectDescription = styled.p`

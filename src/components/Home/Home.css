@@ -1,6 +1,6 @@
 .intro {
     height: 100vh;
-    background-image: url("./images/intro-background.png");
+    background-image: url("../../images/intro-background.png");
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -15,12 +15,14 @@
     color: #ffffff;
     font-weight: 500;
 
+
 }
 
 .intro>.subheading {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: #E0B084;
+
 }
 
 .intro-mobile {
@@ -112,13 +114,18 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+    }
+
+    .intro-mobile > .logo-container > img {
         animation: animateLogo 1s ease-out;
     }
+
+
 }
 
 @keyframes animateLogo {
     0% {
-        opacity: 0.5;
+        opacity: 0;
     }
 
     100% {

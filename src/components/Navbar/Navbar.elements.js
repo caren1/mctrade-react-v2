@@ -8,6 +8,7 @@ position: absolute;
 top: 0;
 z-index: 999;
 min-width: 100%;
+animation: animateLogo 1s ease-out;
 
 @media screen and (max-width: 765px) {
     display: none;

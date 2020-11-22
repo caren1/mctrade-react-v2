@@ -7,14 +7,20 @@ flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
 text-align: center;
-/* border: 1px solid white; */
 width: 230px;
 height: 200px;
 font-family: 'Poppins', sans-serif;
 margin: 3em;
 
+:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+}
+
+
 @media screen and (max-width: 800px) {
 justify-content: space-evenly;
+margin: 2em
 }
 `
 
@@ -54,6 +60,7 @@ font-weight: 300;
 
 &:hover {
     transform: scale(1.05);
+    transform:  translateY(2px);
     transition: all 0.2s ease-out;
 }
 `

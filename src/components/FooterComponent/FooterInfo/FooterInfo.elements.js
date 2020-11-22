@@ -6,6 +6,7 @@ padding: 2em;
 line-height: 1.4;
 border-right: 2px solid #E0B084;
 transition: all 0.2s ease;
+animation: animateLogo 1.1s ease-out;
 
 
 @media screen and (max-width: 1000px) {

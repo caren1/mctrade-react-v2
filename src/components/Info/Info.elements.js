@@ -22,6 +22,9 @@ max-width: 65%;
 margin: 50px auto;
 font-size: 10px;
 
+@media screen and (max-width: 900px) {
+    font-size: 9px;
+}
 
 @media screen and (max-width: 800px) {
     max-width: 80%;
@@ -32,7 +35,7 @@ font-size: 10px;
 `
 export const InfoHeading = styled.h1`
 color: #E0B084;
-font-size: 7.5em;
+font-size: 6.5em;
 font-family: 'Lora', serif;
 margin-bottom: 0.5em;
 font-weight: 500;

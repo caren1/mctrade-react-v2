@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SingleProjectDetailsContainer = styled.div`
 min-height: 100vh;
-/* max-height: 100%; */
 background-color: #041B2D;
 padding: 2em;
 display: flex;

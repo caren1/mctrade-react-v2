@@ -126,6 +126,7 @@ font-weight: 300;
 
 @media screen and (max-width: 800px) {
     text-align: center;
+    font-size: 1.5em;
 }
 `
 
@@ -134,7 +135,7 @@ line-height: 1.7;
 
 @media screen and (max-width: 500px) {
 line-height: 2;
-font-size: 14px;
+font-size: 13px;
 }
 `
 

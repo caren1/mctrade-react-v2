@@ -15,7 +15,7 @@ font-family: 'Lora', serif;
 font-weight: 500;
 
 @media screen and (max-width: 800px) {
-    font-size: 40px;
+    font-size: 45px;
 }
 `
 

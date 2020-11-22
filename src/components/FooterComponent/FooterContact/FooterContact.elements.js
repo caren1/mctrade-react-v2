@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FooterContactContainer = styled.div `
-/* max-width: 60%; */
 padding-left: 4em;
 display: flex;
 flex-direction: column;
@@ -12,7 +11,6 @@ text-align: center;
 @media screen and (max-width: 1000px) {
 height: 100vh;
 padding-left: 0;
-padding: 1em;
 }
 `
 
@@ -31,6 +29,8 @@ align-items: center;
 justify-content: center;
 max-width: 100%;
 padding: 1em;
+animation: animateLogo 1.1s ease-out;
+
 `
 
 export const ContactInput = styled.input `
@@ -70,7 +70,7 @@ width: 450px;
 }
 
 @media screen and (max-width: 700px) {
-width: 300px;
+max-width: 300px;
 }
 
 `
