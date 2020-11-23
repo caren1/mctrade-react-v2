@@ -5,10 +5,11 @@ import './App.css'
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 
 // COMPONENTS IMPORT
-import { Navbar, Home, SingleOfferDetails, FooterComponent } from './components'
+import { Navbar, Home, SingleOfferDetails, FooterComponent, SingleProjectDetails } from './components'
 
 // DATA IMPORT
 import offerJSONData from './mct-offer.json';
+// import projectsJSONdata.f
 // const example1 = offerJSONData[0];
 
 // Components :
@@ -36,9 +37,13 @@ function App() {
         <SingleOfferDetails offer={offer}/>
       </Route>
 
-      {/* <Route path="/projects/:id">
-        <SingleProjectDetails project={project}/>
-      </Route> */}
+      <Route path="/projects/:id">
+        {/* <SingleProjectDetails project={project}/> */}
+      </Route>
+
+      <Route path="/agusia">
+        <SingleProjectDetails/>
+      </Route>
 
       <Route path="/">
         <div className="app">
