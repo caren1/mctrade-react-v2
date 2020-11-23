@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const SingleProjectDetailsContainer = styled.div`
 min-height: 100vh;
@@ -19,6 +20,8 @@ position: relative;
 export const ProjectIntro = styled.div`
 
 `
+
+
 
 export const ProjectTitle = styled.h1`
 color: #E0B084;

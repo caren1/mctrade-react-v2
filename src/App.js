@@ -12,6 +12,11 @@ import offerJSONData from './mct-offer.json';
 // import projectsJSONdata.f
 // const example1 = offerJSONData[0];
 
+import projectsJSONData from './mct-projects.json';
+// const example1 = projectsJSONData[0];
+// console.log( "initialzzzzzzzzzzz", example1);
+
+
 // Components :
 // - Navbar
 // - HOME : { Info, Offer, Project, Info2 }
@@ -27,8 +32,9 @@ function App() {
   const offer = offerMatch ? offerJSONData.find(offer => offer.id === Number(offerMatch.params.id)) : null;
 
   // route matcher for single project 
-  // const projectMatch = useRouteMatch('/projects/:id');
-  // const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
+  const projectMatch = useRouteMatch('/projects/:id');
+  const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
+
 
   return (
     <Switch>
@@ -38,11 +44,7 @@ function App() {
       </Route>
 
       <Route path="/projects/:id">
-        {/* <SingleProjectDetails project={project}/> */}
-      </Route>
-
-      <Route path="/agusia">
-        <SingleProjectDetails/>
+        <SingleProjectDetails project={project}/>
       </Route>
 
       <Route path="/">

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 export const SingleProjectContainer = styled.div`
@@ -104,4 +105,9 @@ line-height: 1.5;
 @media screen and (max-width: 600px) {
     font-size: 12px;
 }
+`
+
+export const ProjectLinkWrapper = styled(Link)`
+cursor: pointer;
+height: 100%;
 `
