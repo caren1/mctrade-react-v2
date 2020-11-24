@@ -6,7 +6,7 @@ import FooterContact from './FooterContact/FooterContact'
 
 const Footer = () => {
     return (
-        <FooterContainer>
+        <FooterContainer title="contact" id="contact">
             <FooterInfo />
             <FooterContact />
         </FooterContainer>

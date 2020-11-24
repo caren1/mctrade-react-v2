@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer `
-height: 100vh;
+min-height: 100vh;
+max-height: 100%;
 width: 100%;
 padding: 1em;
 background-color: #041B2D;

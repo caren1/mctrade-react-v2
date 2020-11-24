@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 export const Nav = styled.nav `
 min-height: 100px;
@@ -42,7 +43,7 @@ margin-bottom: 1em;
 margin-right: 2em;
 `
 
-export const LinkItem = styled.a `
+export const LinkItem = styled(Link) `
 color: #ffffff;
 padding: 1em;
 font-size: 16px;
@@ -72,6 +73,10 @@ cursor: pointer;
     color: #ffffff;
     transition: all 0.5s ease;
 }
+`
+export const CallHref = styled.a`
+text-decoration: inherit;
+color: inherit;
 `
 
 export const Line = styled.hr `

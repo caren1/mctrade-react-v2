@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const OfferContainer = styled.div`
-/* height: 100%; */
 min-height: 100vh;
 max-height: 100%;
 background-color: #041B2D;

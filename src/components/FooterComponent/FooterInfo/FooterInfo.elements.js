@@ -18,6 +18,7 @@ animation: animateLogo 1.1s ease-out;
     align-items: center;
     text-align: center;
     border-right: none;
+    
 }
 
 `

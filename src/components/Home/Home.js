@@ -26,19 +26,19 @@ const Home = () => {
             </div>
           </section>
 
-          <section>
+          <section title="info1" id="info1">
             <Info title={info1.title} text={info1.text} subtext={info1.subtext}/>
           </section>
 
-          <section>
+          <section title="offer" id="offer">
             <Offer />
           </section>
 
-          <section style={{  scrollSnapAlign: 'start' }}>
+          <section title="projects" id="projects" style={{  scrollSnapAlign: 'start' }}>
             <Projects />
           </section>
 
-          <section>
+          <section title="info2" id="info2">
             <Info title={info2.title} text={info2.text} subtext={info2.subtext}/>
           </section>
         </main>

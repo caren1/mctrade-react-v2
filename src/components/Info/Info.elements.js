@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-height: 100vh;
+min-height: 100vh;
 max-height: 100%;
 background-image: url('../../assets/images/intro-background.png');
 background-attachment: fixed;
@@ -13,7 +13,7 @@ align-items: center;
 text-align: left;
 
 @media screen and (max-width: 850px) {
-    height:100%
+    /* height:100% */
 }
 `
 

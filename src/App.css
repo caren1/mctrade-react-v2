@@ -16,7 +16,7 @@
   }
 
   html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   }
 
   section {
@@ -25,4 +25,19 @@
 
   footer {
     scroll-snap-align: center;
+  }
+
+  @media screen and (max-width: 750px) {
+
+    html {
+      scroll-snap-type: proximity;
+    }
+
+    section{
+      scroll-snap-align: start;
+    }
+
+    footer {
+      scroll-snap-align: end;
+    }
   }

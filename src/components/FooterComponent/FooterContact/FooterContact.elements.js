@@ -84,11 +84,14 @@ font-family: 'Roboto Slab', serif;
 font-size: 16px;
 font-weight: 200;
 transition: all 0.2s ease;
+outline: none;
+border: none;
 
 &:hover, :focus, :target {
     color: #E0B084;
     background-color: transparent;
     border: 2px solid #E0B084;
     cursor: pointer;
+    font-weight: 300;
 }
 `

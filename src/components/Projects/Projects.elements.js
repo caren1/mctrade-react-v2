@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
 padding: 3em;
-height: 100%;
+min-height: 100vh;
+max-height: 100%;
 background-color: #041B2D;
 `
 
