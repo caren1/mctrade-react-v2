@@ -110,4 +110,5 @@ line-height: 1.5;
 export const ProjectLinkWrapper = styled(Link)`
 cursor: pointer;
 height: 100%;
+text-decoration: none;
 `

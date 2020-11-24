@@ -34,7 +34,7 @@ const Home = () => {
             <Offer />
           </section>
 
-          <section>
+          <section style={{  scrollSnapAlign: 'start' }}>
             <Projects />
           </section>
 

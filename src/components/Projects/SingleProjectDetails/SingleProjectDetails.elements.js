@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const SingleProjectDetailsContainer = styled.div`
 min-height: 100vh;
@@ -9,19 +8,26 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
+text-align: center;
+
+@media screen and (max-width: 750px) {
+    /* padding: 2em; */
+}
 `
 
 export const Wrapper = styled.div`
 max-width: 90%;
 padding: 1em;
 position: relative;
+
+@media screen and (max-width: 750px) {
+    max-width: 100%;
+}
 `
 
 export const ProjectIntro = styled.div`
 
 `
-
-
 
 export const ProjectTitle = styled.h1`
 color: #E0B084;
@@ -51,6 +57,11 @@ justify-self: flex-start;
 
 export const ProjectDetails = styled.ul`
 margin-left: 2em;
+text-align: left;
+
+@media screen and (max-width: 750px) {
+    margin-left: 0;
+}
 `
 
 export const DetailItem = styled.li`
@@ -77,7 +88,6 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 margin-top: 1em;
-
 `
 
 export const GalleryItem = styled.div`
@@ -86,6 +96,11 @@ height: 80px;
 cursor: pointer;
 margin: 1em;
 flex-basis: 20%;
+
+@media screen and (max-width: 750px) {
+    height: 50px;
+    margin: 0.5em;
+}
 `
 
 export const GalleryImage = styled.img`
@@ -100,9 +115,14 @@ max-width: 20%;
 padding:0;
 position: absolute;
 max-width: 20%;
-left: -5%;
-top: 4%;
+left: 5%;
+top: 5%;
 z-index: 999;
+
+@media screen and (max-width: 490px) {
+left: 1%;
+}
+
 `
 export const Arrow = styled.span `
  display: block;
@@ -112,5 +132,10 @@ export const Arrow = styled.span `
     border-right: 3px solid #E0B084;
     transform: rotate(135deg);
     animation: willworklikethis 5s infinite;
+
+    @media screen and (max-width: 750px) {
+    width: 10px;
+    height: 10px;
+}
 `
 

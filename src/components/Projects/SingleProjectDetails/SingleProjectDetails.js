@@ -2,7 +2,7 @@ import React from 'react'
 import { SingleProjectDetailsContainer, ArrowContainer, Arrow, Wrapper,
      ProjectTitle, ProjectDate, ProjectDetails, DetailItem, DetailItemSpan, ProjectGallery, GalleryItem, GalleryImage, ProjectIntro} from './SingleProjectDetails.elements'
 
-const SingleProjectDetails = ({ project }) => {
+const SingleProjectDetails = ({ project, backFromPage }) => {
 
     const { id, title, date, details, photos } = project;
     // console.log("PROPSZSZ", id, title, date, details, photos);
@@ -11,7 +11,7 @@ const SingleProjectDetails = ({ project }) => {
         
             <SingleProjectDetailsContainer>
                 <Wrapper>
-                <ArrowContainer>
+                <ArrowContainer onClick={backFromPage}>
                         <Arrow></Arrow>
                     </ArrowContainer>
                 <ProjectIntro>

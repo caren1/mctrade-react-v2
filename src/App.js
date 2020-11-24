@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 
 // REACT ROUTER IMPORTS
-import { Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Switch, Route, useRouteMatch, useHistory } from 'react-router-dom';
 
 // COMPONENTS IMPORT
 import { Navbar, Home, SingleOfferDetails, FooterComponent, SingleProjectDetails } from './components'
@@ -35,16 +35,21 @@ function App() {
   const projectMatch = useRouteMatch('/projects/:id');
   const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
 
+  // functionality for comming back from details pages
+  const history = useHistory();
+  const previousPageHandler = () => {
+    history.push('/')
+  }
 
   return (
     <Switch>
 
       <Route path="/offers/:id">
-        <SingleOfferDetails offer={offer}/>
+        <SingleOfferDetails offer={offer} backFromPage={previousPageHandler} />
       </Route>
 
       <Route path="/projects/:id">
-        <SingleProjectDetails project={project}/>
+        <SingleProjectDetails project={project} backFromPage={previousPageHandler}/>
       </Route>
 
       <Route path="/">

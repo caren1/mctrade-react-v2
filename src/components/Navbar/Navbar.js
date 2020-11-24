@@ -15,7 +15,7 @@ import {
 
 const Navbar = () => {
     return (
-        <>
+        <header>
             <Nav>
                 <NavbarContainer>
                     <NavbarImageContainer>
@@ -38,7 +38,7 @@ const Navbar = () => {
                     </NavbarLinksContainer>
                 </NavbarContainer>
             </Nav>  
-        </>
+        </header>
     )
 }
 

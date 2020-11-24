@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan } from './SingleOfferDetails.elements'
 
-const SingleOfferDetails = ({ offer }) => {
+const SingleOfferDetails = ({ offer, backFromPage }) => {
     const { title, icon, details } = offer;
 
     return (
@@ -18,7 +18,7 @@ const SingleOfferDetails = ({ offer }) => {
 
                 <TopDetails>
                     <IconDetails>
-                    <ArrowContainer>
+                    <ArrowContainer onClick={backFromPage}>
                     <Arrow></Arrow>
                     </ArrowContainer>
                         <IconWrapper>
