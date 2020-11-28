@@ -3,7 +3,7 @@ import { SingleProjectContainer, ProjectImagesContainer, ProjectLinkWrapper ,Mai
 
 const SingleProject = ({ project }) => {
 
-    const { id, title, photos } = project; // todo: add description to JSON file
+    const { id, title, photos, description } = project; // todo: add description to JSON file
 
     return (
         <ProjectLinkWrapper to={`/projects/${id}`}>
@@ -30,8 +30,7 @@ const SingleProject = ({ project }) => {
 
             <ProjectDescriptionContainer>
                 <ProjectTitle>{title}</ProjectTitle>
-                <ProjectDescription>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quibusdam voluptate iste autem, voluptates nobis odit impedit natus recusandae nam labore optio
-                Laborum quibusdam voluptate iste autem, voluptates nobis odit impedit natus recusandae nam labore optio  corporis dolore facere cum deleniti ullam consequatur voluptatum!</ProjectDescription>
+                <ProjectDescription>{description}</ProjectDescription>
             </ProjectDescriptionContainer>
 
         </SingleProjectContainer>

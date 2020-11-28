@@ -63,4 +63,8 @@ font-weight: 300;
     transform:  translateY(2px);
     transition: all 0.2s ease-out;
 }
+
+@media screen and (max-width: 800px) {
+    font-size: 12px;
+}
 `

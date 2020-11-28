@@ -2,9 +2,10 @@
         "id": 1,
         "title": "Kościół Św. Jerzego w Elblągu",
         "date": "Termin realizacji : 2016 / 2017",
+        "description": "Projekt zrealizowany poprzez dofinansowanie ze środków ministerstwa kultury i dziedzictwa narodowego. Etap I - Ochrona Zabytków, Etap II - Prace wewnętrzne. Konserwacja, zabezpieczanie, wymiana, czyszczenie, izolacja.",
         "details": [
             "Zabezpieczenie belek stropowych / konserwacja środkami chemicznymi",
-            " Zabezpieczenie posufitki, odrobaczenie, konserwacja oraz malowanie",
+            "Zabezpieczenie posufitki, odrobaczenie, konserwacja oraz malowanie",
             "Wymiana oraz docieplenie stropów drewnianych, lakierowanie, wymiana okien",
             "Zakładanie nowej instalacji elektrycznej wraz z zachowaniem wszelkich warunków zgodnych z procedurami dotyczącymi warunków p.poż.",
             "Czyszczenie i wymiana fugi elewacyjnej na całości obiektu (piaskowanie cegieł)",
@@ -32,6 +33,7 @@
         "id": 2,
         "title": "Parafia pw. Św. Leonarda w Chociszewie",
         "date": "Termin realizacji : 2017 / 2018",
+        "description": "Realizacja we współpracy z diecezją w Chociszewie, obejmująca prace przy elewacji, wzmacnianie fundamentów, odtwarzanie oryginalnych części, konserwację drewna, malowanie, czyszczenie i naprawę",
         "details": [
             "Czyszczenie elewacji zewnętrznej (deski), konserwacja oraz malowanie środkami do konserwacji drewna",
             "Zabezpieczenie i naprawa elementów drewnianych z odtworzeniem części oryginalnych (odwzorowanie wg. materiałów opisowych)",
@@ -54,8 +56,9 @@
         "id": 3,
         "title": "Parafia pw. Św. Jakuba w Słupi",
         "date": "Termin realizacji : 2017",
+        "description": "Wymagający projekt zrealizowany w 2017 roku, uwzględniający zaawansowane techniki konserwacji drewna, malowania, uzupełniania fugi oraz prac wysokościowych.",
         "details": [
-            "Naprawa oraz wymiana cegieł w dzwonnicy ",
+            "Naprawa oraz wymiana cegieł w dzwonnicy",
             "Uzupełnienie w całości fugi elewacyjnej (nałożono na całość środki chemiczne zabezpieczające przed kruszeniem się cegieł)",
             "Dobór koloru cegieł do całości dzwonnicy, malowanie, lakierowanie",
             "Wzmocnienie środkami chemicznymi",
@@ -77,6 +80,7 @@
         "id": 4,
         "title": "Klient Indywidualny, Sadłowo",
         "date": "Termin realizacji : 2017",
+        "description": "Realizacja dla klienta indywidualnego uwzględniająca prace z czyszczeniem, gruntowaniem, hydroizolacją oraz zabezpieczaniem fundamentów.",
         "details": [
             "Odkrycie całości fundamentów (mechanicznie, ręcznie)",
             "Czyszczenie mechaniczne i ręczne całości fundamentów",
@@ -101,9 +105,8 @@
         "id": 5,
         "title": "Wyższe Seminarium Duchowne w Płocku",
         "date": "Termin realizacji : 2017 / 2018",
+        "description": "Realizacja projektu termomodernizacja budynków użyteczności publicznej na terenie Powiatu Mławskiego, Ciechanowskiego oraz Płockiego z Programu regionalnego Fundusze Europejskie. Celem projektu było zwiększenie efektywności energetycznej budynków użyteczności publicznej, poprzez kompleksową termomodernizację, w tym wymianę źródła ciepła i zastosowanie OZE",
         "details": [
-            "Realizacja projektu termomodernizacja budynków użyteczności publicznej na terenie Powiatu Mławskiego, Ciechanowskiego oraz Płockiego z Programu regionalnego Fundusze Europejskie",
-            "Cel projektu: Zwiększenie efektywności energetycznej budynków użyteczności publicznej, poprzez kompleksową termomodernizację, w tym wymianę źródła ciepła i zastosowanie OZE",
             "Beneficjent: Sanktuarium Diecezjalne Św. Antoniego z Padwy w Ratowie",
             "Demontaż oraz montaż okien zewnętrznych, obróbka parapetów itp.",
             "Montaż nowej instalacji CO. wraz z ujęciami, pompą itp. oraz montaż nowych grzejników panelowych w pomieszczeniach",

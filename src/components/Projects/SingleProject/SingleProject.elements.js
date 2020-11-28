@@ -34,8 +34,13 @@ width: 100%;
 `
 
 export const ProjectImagesContainer = styled.div`
-width: 100%;
+max-width: 50%;
+
+@media screen and (max-width: 500px) {
+    max-width: 100%;
+}
 `
+
 export const MainImageContainer = styled.div`
 width: 160px;
 height: 160px;
@@ -66,6 +71,10 @@ margin: 10px 2px 0 2px;
 @media screen and (max-width: 1000px) {
 height: 70px;
 width: 70px;
+}
+
+@media screen and (max-width: 500px) {
+margin: 5px;
 }
 `
 

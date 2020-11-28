@@ -1,19 +1,17 @@
 import React from 'react'
-import { SingleProjectDetailsContainer, ArrowContainer, Arrow, Wrapper,
-     ProjectTitle, ProjectDate, ProjectDetails, DetailItem, DetailItemSpan, ProjectGallery, GalleryItem, GalleryImage, ProjectIntro} from './SingleProjectDetails.elements'
+import { SingleProjectDetailsContainer, Wrapper,
+     ProjectTitle, ProjectDate, ProjectDetails, CloseButton, DetailItem, DetailItemSpan, ProjectGallery, GalleryItem, GalleryImage, ProjectIntro} from './SingleProjectDetails.elements'
 
 const SingleProjectDetails = ({ project, backFromPage }) => {
 
-    const { id, title, date, details, photos } = project;
+    const { title, date, details, photos } = project;
     // console.log("PROPSZSZ", id, title, date, details, photos);
 
     return (
         
             <SingleProjectDetailsContainer>
                 <Wrapper>
-                <ArrowContainer onClick={backFromPage}>
-                        <Arrow></Arrow>
-                    </ArrowContainer>
+                <CloseButton onClick={backFromPage}></CloseButton>
                 <ProjectIntro>
                     <ProjectTitle>{title}</ProjectTitle>
                     <ProjectDate>{date}</ProjectDate>

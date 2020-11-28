@@ -8,17 +8,17 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-text-align: center;
+position: relative;
 
 @media screen and (max-width: 750px) {
-    /* padding: 2em; */
+    text-align: center;
 }
 `
 
 export const Wrapper = styled.div`
 max-width: 90%;
 padding: 1em;
-position: relative;
+
 
 @media screen and (max-width: 750px) {
     max-width: 100%;
@@ -139,3 +139,46 @@ export const Arrow = styled.span `
 }
 `
 
+export const CloseButton = styled.a`
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+&:hover {
+  opacity: 1;
+}
+&:before, &:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #E0B084;
+}
+&:before {
+  transform: rotate(45deg);
+}
+&:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 600px) {
+  width: 10px;
+  height: 10px;
+
+  &:before, &:after {
+  left: 15px;
+  top: 0;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #E0B084;
+}
+
+}
+`

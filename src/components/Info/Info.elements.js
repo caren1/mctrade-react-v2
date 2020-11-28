@@ -23,10 +23,10 @@ margin: 50px auto;
 font-size: 10px;
 
 @media screen and (max-width: 900px) {
-    font-size: 9px;
+    font-size: 8.5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     max-width: 80%;
     font-size: 7px;
     text-align: center;

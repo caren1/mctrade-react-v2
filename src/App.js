@@ -35,7 +35,7 @@ function App() {
   const projectMatch = useRouteMatch('/projects/:id');
   const project = projectMatch ? projectsJSONData.find(project => project.id === Number(projectMatch.params.id)) : null;
 
-  // functionality for comming back from details pages
+  // functionality for comming back from details pages,
   const history = useHistory();
   const previousPageHandler = () => {
     history.push('/')
