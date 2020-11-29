@@ -38,7 +38,7 @@ function App() {
   // functionality for comming back from details pages,
   const history = useHistory();
   const previousPageHandler = () => {
-    history.push('/')
+    history.goBack();
   }
 
   return (

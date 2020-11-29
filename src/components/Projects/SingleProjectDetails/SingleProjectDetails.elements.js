@@ -167,7 +167,7 @@ export const CloseButton = styled.a`
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   width: 10px;
   height: 10px;
 

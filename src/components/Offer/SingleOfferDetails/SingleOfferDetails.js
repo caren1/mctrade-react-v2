@@ -1,8 +1,21 @@
 import React from 'react'
-import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan } from './SingleOfferDetails.elements'
+import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan, CertificatesContainer, SingleCertificate } from './SingleOfferDetails.elements'
 
 const SingleOfferDetails = ({ offer, backFromPage }) => {
-    const { title, icon, details } = offer;
+    const { title, icon, details, certificates } = offer;
+
+
+    let certificatesContainer = null;
+    
+    if (certificates) {
+        certificatesContainer = (
+            <CertificatesContainer>
+                {certificates.map((cert) => (
+                    <SingleCertificate src={cert}></SingleCertificate>
+                ))}
+            </CertificatesContainer>
+        )
+    }
 
     return (
         <OfferDetails>
@@ -30,14 +43,14 @@ const SingleOfferDetails = ({ offer, backFromPage }) => {
 
                 <BottomListContainer>
                     <DetailsList>
-                    {details.map((offerDetail, i) => (
-                        <ListItem key={i}>
-                            <ListItemSpan>{offerDetail}</ListItemSpan>
-                        </ListItem>
-                    ))}
-                        </DetailsList>
+                        {details.map((offerDetail, i) => (
+                            <ListItem key={i}>
+                                <ListItemSpan>{offerDetail}</ListItemSpan>
+                            </ListItem>
+                        ))}
+                    </DetailsList>
                 </BottomListContainer>
-                
+                    {certificatesContainer}
             </DetailsContainer>
         </OfferDetails>
     )

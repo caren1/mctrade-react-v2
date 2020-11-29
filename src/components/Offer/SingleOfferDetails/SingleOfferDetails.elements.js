@@ -146,3 +146,23 @@ font-weight: 200;
 export const ListItemSpan = styled.span `
 color: #ffffff;
 `
+
+export const CertificatesContainer = styled.div`
+max-height: 20%;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 3em;
+
+@media screen and (max-width: 500px) {
+    height: 160px;
+}
+`
+
+export const SingleCertificate = styled.img`
+max-height: 100%;
+max-width: 100%;
+cursor: pointer;
+margin: 10px;
+`
