@@ -1,6 +1,7 @@
 import React from 'react'
 import { SingleProjectDetailsContainer, Wrapper,
      ProjectTitle, ProjectDate, ProjectDetails, CloseButton, DetailItem, DetailItemSpan, ProjectGallery, GalleryItem, GalleryImage, ProjectIntro} from './SingleProjectDetails.elements'
+import { SRLWrapper } from 'simple-react-lightbox'
 
 const SingleProjectDetails = ({ project, backFromPage }) => {
 
@@ -23,6 +24,7 @@ const SingleProjectDetails = ({ project, backFromPage }) => {
                         </DetailItem>
                     ))}
                 </ProjectDetails>
+                    <SRLWrapper>
                 <ProjectGallery>
                     {photos.map((photo, i) => (
                         <GalleryItem key={i}>
@@ -30,6 +32,7 @@ const SingleProjectDetails = ({ project, backFromPage }) => {
                         </GalleryItem>
                     ))}
                 </ProjectGallery>
+                    </SRLWrapper>
                 </Wrapper>
             </SingleProjectDetailsContainer>
     )

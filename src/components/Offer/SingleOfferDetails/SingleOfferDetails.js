@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, ArrowContainer, IconWrapper, Arrow, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan, CertificatesContainer, SingleCertificate } from './SingleOfferDetails.elements'
+import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, IconWrapper, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan, CertificatesContainer, SingleCertificate, CloseButton } from './SingleOfferDetails.elements'
 
 const SingleOfferDetails = ({ offer, backFromPage }) => {
     const { title, icon, details, certificates } = offer;
@@ -10,8 +10,8 @@ const SingleOfferDetails = ({ offer, backFromPage }) => {
     if (certificates) {
         certificatesContainer = (
             <CertificatesContainer>
-                {certificates.map((cert) => (
-                    <SingleCertificate src={cert}></SingleCertificate>
+                {certificates.map((cert, i) => (
+                    <SingleCertificate key={i} src={cert}></SingleCertificate>
                 ))}
             </CertificatesContainer>
         )
@@ -26,14 +26,10 @@ const SingleOfferDetails = ({ offer, backFromPage }) => {
                 </NavbarImageContainer>
                 <NavbarTitle>Oferta</NavbarTitle>
             </NavbarContainer>
-
+            <CloseButton onClick={backFromPage}></CloseButton>
             <DetailsContainer>
-
                 <TopDetails>
                     <IconDetails>
-                    <ArrowContainer onClick={backFromPage}>
-                    <Arrow></Arrow>
-                    </ArrowContainer>
                         <IconWrapper>
                             <img src={icon} alt="offer-icon" />
                         </IconWrapper>

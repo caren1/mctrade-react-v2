@@ -5,6 +5,10 @@ min-height: 100vh;
 max-height: 100%;
 background-color: #041B2D;
 padding: 2em 1em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 
 

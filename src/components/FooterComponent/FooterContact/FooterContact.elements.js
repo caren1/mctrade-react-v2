@@ -12,6 +12,7 @@ text-align: center;
 height: 100vh;
 padding-left: 0;
 }
+
 `
 
 export const ContactTitle = styled.h1 `
@@ -71,6 +72,11 @@ width: 450px;
 
 @media screen and (max-width: 700px) {
 max-width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    max-width: 220px;
+    border: 1px solid #E0B084;
 }
 
 `

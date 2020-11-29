@@ -92,7 +92,7 @@ margin-top: 1em;
 
 export const GalleryItem = styled.div`
 width: 80px;
-height: 80px;
+height: 100px;
 cursor: pointer;
 margin: 1em;
 flex-basis: 20%;
@@ -107,36 +107,6 @@ export const GalleryImage = styled.img`
 width: 100%;
 height: 100%;
 object-fit: cover;
-`
-
-export const ArrowContainer = styled.div `
-cursor: pointer;
-max-width: 20%;
-padding:0;
-position: absolute;
-max-width: 20%;
-left: 5%;
-top: 5%;
-z-index: 999;
-
-@media screen and (max-width: 490px) {
-left: 1%;
-}
-
-`
-export const Arrow = styled.span `
- display: block;
-    width: 15px;
-    height: 15px;
-    border-bottom: 3px solid #E0B084;
-    border-right: 3px solid #E0B084;
-    transform: rotate(135deg);
-    animation: willworklikethis 5s infinite;
-
-    @media screen and (max-width: 750px) {
-    width: 10px;
-    height: 10px;
-}
 `
 
 export const CloseButton = styled.a`

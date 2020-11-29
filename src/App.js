@@ -16,6 +16,7 @@ import projectsJSONData from './mct-projects.json';
 // const example1 = projectsJSONData[0];
 // console.log( "initialzzzzzzzzzzz", example1);
 
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 // Components :
 // - Navbar
@@ -49,7 +50,9 @@ function App() {
       </Route>
 
       <Route path="/projects/:id">
-        <SingleProjectDetails project={project} backFromPage={previousPageHandler}/>
+        <SimpleReactLightbox>
+          <SingleProjectDetails project={project} backFromPage={previousPageHandler}/>
+        </SimpleReactLightbox>
       </Route>
 
       <Route path="/">

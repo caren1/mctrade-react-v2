@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const OfferDetails = styled.div `
-height: 100vh;
+min-height: 100vh;
+max-height: 100%;
 padding: 3em;
 background-color: #041B2D;
+scroll-snap-align: start;
 
 @media screen and (max-width: 600px) {
     font-size: 15px;
@@ -53,7 +55,7 @@ align-items: center;
 width: 100%;
 position: relative;
 padding: 1em;
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 `
 export const IconDetails = styled.div `
 display: flex;
@@ -63,29 +65,6 @@ align-items: center;
 @media screen and (max-width: 800px) {
     flex-direction: column;
 }
-`
-
-export const ArrowContainer = styled.div `
-padding-right: 2em;
-cursor: pointer;
-max-width: 20%;
-
-@media screen and (max-width: 800px) {
-    padding:0;
-    position: absolute;
-max-width: 20%;
-left: 10%;
-z-index: 999;
-}
-`
-export const Arrow = styled.span `
- display: block;
-    width: 15px;
-    height: 15px;
-    border-bottom: 3px solid #E0B084;
-    border-right: 3px solid #E0B084;
-    transform: rotate(135deg);
-    animation: willworklikethis 5s infinite;
 `
 
 export const IconWrapper = styled.div `
@@ -165,4 +144,49 @@ max-height: 100%;
 max-width: 100%;
 cursor: pointer;
 margin: 10px;
+`
+
+export const CloseButton = styled.a`
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 1;
+
+&:hover {
+  opacity: 1;
+}
+&:before, &:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #E0B084;
+}
+&:before {
+  transform: rotate(45deg);
+}
+&:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 750px) {
+  width: 10px;
+  height: 10px;
+
+  &:before, &:after {
+  left: 15px;
+  top: 0;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #E0B084;
+}
+
+}
 `
