@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import mctlogo from '../../assets/icons/mct-logo.svg'
 
 import { Info, Offer, Projects } from '../.'
 
@@ -7,6 +8,7 @@ import { Info, Offer, Projects } from '../.'
 import infoJSONData from '../../mct-info.json';
 
 const [ info1, info2 ] = infoJSONData;
+
 
 const Home = () => {
     return (
@@ -18,7 +20,7 @@ const Home = () => {
             </div>
             <div className="intro-mobile">
               <div className="logo-container">
-                <img src="../assets/icons/mct-logo.svg" alt="main-logo" />
+                <img src={mctlogo} alt="main-logo" />
               </div>
               <div className="arrow">
                 <span></span>

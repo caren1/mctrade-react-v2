@@ -1,6 +1,6 @@
 .intro {
     height: 100vh;
-    background-image: url("../../images/intro-background.png");
+    background-image: url("../../assets/images/intro-background.png");
     background-attachment: fixed;
     background-size: cover;
     display: flex;

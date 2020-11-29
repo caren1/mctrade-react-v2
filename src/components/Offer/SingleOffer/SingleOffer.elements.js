@@ -42,13 +42,8 @@ font-size: 14px;
 export const IconWrapper = styled.div`
 max-height: 80px;
 max-width: 80px;
-
-img {
-    fill: #E0B084;
-    color: #E0B084;
-    width: 100%;
-    height: 100%;
-    }
+fill: #E0B084;
+color: #E0B084;
 
 
 @media screen and (max-width: 800px) {
@@ -71,4 +66,11 @@ font-weight: 300;
 @media screen and (max-width: 800px) {
     font-size: 12px;
 }
+`
+
+export const OfferIcon = styled.img`
+/* fill: #E0B084;
+    color: #E0B084; */
+    width: 100%;
+    height: 100%;
 `

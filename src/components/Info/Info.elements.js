@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import introbackground from '../../assets/images/intro-background.png'
 
 export const InfoContainer = styled.div`
 min-height: 100vh;
 max-height: 100%;
-background-image: url('../../assets/images/intro-background.png');
+background-image: url(${introbackground});
 background-attachment: fixed;
 background-size: cover;
 display: flex;

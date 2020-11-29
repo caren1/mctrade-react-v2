@@ -1,7 +1,7 @@
 [
    {
       "id":1,
-      "icon":"../assets/icons/measuring.svg",
+      "icon":"/mct-react-v2/assets/icons/measuring.svg",
       "title":"Usługi Ogólnobudowlane",
       "details":[
          "Roboty ziemne (wykopy, odwierty, drenaże, utwardzanie dróg)",
@@ -20,7 +20,7 @@
    },
    {
       "id":2,
-      "icon":"../assets/icons/paint.svg",
+      "icon":"/mct-react-v2/assets/icons/paint.svg",
       "title":"Wykończenia",
       "details":[
          "Kompleksowe remonty wnętrz",
@@ -41,7 +41,7 @@
    },
    {
       "id":3,
-      "icon":"../assets/icons/hammer.svg",
+      "icon":"/mct-react-v2/assets/icons/hammer.svg",
       "title":"Prace konserwatorskie",
       "details":[
          "Renowacja obiektów zabytkowych (piaskowanie)",
@@ -54,7 +54,7 @@
    },
    {
       "id":4,
-      "icon":"../assets/icons/roof.svg",
+      "icon":"/mct-react-v2/assets/icons/roof.svg",
       "title":"Fotowoltaika",
       "details":[
          "Przygotowanie projektu inwestycyjnego",
@@ -67,7 +67,7 @@
    },
    {
       "id":5,
-      "icon":"../assets/icons/search.svg",
+      "icon":"/mct-react-v2/assets/icons/search.svg",
       "title":"Pośrednictwo",
       "details":[
          "Pomoc w zatrudnieniu",

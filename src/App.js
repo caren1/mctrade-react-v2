@@ -46,7 +46,9 @@ function App() {
     <Switch>
 
       <Route path="/offers/:id">
+      <SimpleReactLightbox>
         <SingleOfferDetails offer={offer} backFromPage={previousPageHandler} />
+        </SimpleReactLightbox>
       </Route>
 
       <Route path="/projects/:id">

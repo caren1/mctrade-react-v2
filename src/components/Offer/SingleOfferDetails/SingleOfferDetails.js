@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavbarContainer, BottomListContainer, IconDetails, NavbarImageContainer, NavbarTitle, NavLogo, DetailsContainer, IconWrapper, TopDetails, ListItem, DetailsList, DetailsHeading, OfferDetails, ListItemSpan, CertificatesContainer, SingleCertificate, CloseButton } from './SingleOfferDetails.elements'
+import mctlogo from '../../../assets/icons/mct-logo.svg'
+import { SRLWrapper } from 'simple-react-lightbox'
+
 
 const SingleOfferDetails = ({ offer, backFromPage }) => {
     const { title, icon, details, certificates } = offer;
-
 
     let certificatesContainer = null;
     
@@ -22,7 +24,7 @@ const SingleOfferDetails = ({ offer, backFromPage }) => {
 
             <NavbarContainer>
                 <NavbarImageContainer>
-                    <NavLogo src={'../../assets/icons/mct-logo.svg'}></NavLogo>
+                    <NavLogo src={mctlogo}></NavLogo>
                 </NavbarImageContainer>
                 <NavbarTitle>Oferta</NavbarTitle>
             </NavbarContainer>
@@ -46,7 +48,9 @@ const SingleOfferDetails = ({ offer, backFromPage }) => {
                         ))}
                     </DetailsList>
                 </BottomListContainer>
+                <SRLWrapper>
                     {certificatesContainer}
+                </SRLWrapper>    
             </DetailsContainer>
         </OfferDetails>
     )

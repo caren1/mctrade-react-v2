@@ -1,11 +1,12 @@
 import React from 'react'
+import mctlogo from '../../../assets/icons/mct-logo.svg'
 import { FooterImageContainer, FooterLogo, FooterInfo, InfoHeading, InfoList, InfoItem } from './FooterInfo.elements'
 
 const Footer = () => {
     return (
             <FooterInfo>
                 <FooterImageContainer>
-                        <FooterLogo src={'../../assets/icons/mct-logo.svg'}></FooterLogo>
+                        <FooterLogo src={mctlogo}></FooterLogo>
                 </FooterImageContainer>
                 <InfoHeading>Zapraszamy do kontaktu! Z przyjemnością odpowiemy na Państwa pytania.</InfoHeading>
                 <InfoHeading>Realizujemy projekty głównie na terenie województwa warmińsko-mazurskiego, pomorskiego oraz mazowieckiego.</InfoHeading>
