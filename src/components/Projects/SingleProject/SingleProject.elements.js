@@ -11,13 +11,13 @@ max-height: 100%;
 width: 60%;
 padding: 1em 2em;
 margin: 2em auto;
-border: 1px solid #E0B084;
+border: 3px solid #E0B084;
 cursor: pointer;
 
 :hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-out;
-    box-shadow: 0 2px 2px solid black;
+    transform: scale(1.03);
+    transition: all 0.4s ease-in;
+    box-shadow: 10px -12px #E0B084;
 
 }
 

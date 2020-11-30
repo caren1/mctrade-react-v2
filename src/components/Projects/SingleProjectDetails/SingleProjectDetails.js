@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { SingleProjectDetailsContainer, Wrapper,
      ProjectTitle, ProjectDate, ProjectDetails, CloseButton, DetailItem, DetailItemSpan, ProjectGallery, GalleryItem, GalleryImage, ProjectIntro} from './SingleProjectDetails.elements'
 import { SRLWrapper } from 'simple-react-lightbox'
@@ -8,13 +8,17 @@ const SingleProjectDetails = ({ project, backFromPage }) => {
     const { title, date, details, photos } = project;
     // console.log("PROPSZSZ", id, title, date, details, photos);
 
+    useEffect(() => {
+        document.getElementById('title').focus()
+    }, [])
+
     return (
         
             <SingleProjectDetailsContainer>
                 <Wrapper>
                 <CloseButton onClick={backFromPage}></CloseButton>
                 <ProjectIntro>
-                    <ProjectTitle>{title}</ProjectTitle>
+                    <ProjectTitle id="title">{title}</ProjectTitle>
                     <ProjectDate>{date}</ProjectDate>
                 </ProjectIntro>
                 <ProjectDetails>

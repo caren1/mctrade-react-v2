@@ -15,9 +15,11 @@ scroll-snap-align: start;
 
 export const NavbarContainer = styled.div `
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     max-width: 100%;
+    animation: animateLogo 2s ease-out;
+
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -45,6 +47,8 @@ flex-direction: column;
 width: 100%;
 font-family: 'Poppins', sans-serif;
 position: relative;
+animation: animateLogo 2s ease-out;
+
 `
 
 export const TopDetails = styled.div `

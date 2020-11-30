@@ -18,6 +18,7 @@ position: relative;
 export const Wrapper = styled.div`
 max-width: 90%;
 padding: 1em;
+animation: animateLogo 2s ease-out;
 
 
 @media screen and (max-width: 750px) {

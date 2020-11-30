@@ -135,9 +135,8 @@
     .intro-mobile > .logo-container > img {
         animation: animateLogo 1s ease-out;
     }
-
-
 }
+
 
 @keyframes animateLogo {
     0% {
