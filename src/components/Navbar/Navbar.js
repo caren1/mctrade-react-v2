@@ -15,12 +15,10 @@ import {
 } from './Navbar.elements.js'
 
 import mctlogo from '../../assets/icons/mct-logo.svg'
-console.log(mctlogo);
-console.log(typeof(mctlogo));
 
 const Navbar = () => {
     return (
-        <header>
+        <header id="navbar" title="navbar">
             <Nav>
                 <NavbarContainer>
                     <NavbarImageContainer>

@@ -99,6 +99,22 @@
     }
 }
 
+@keyframes constantTop {
+    0% {
+        opacity: 0.2;
+        transform: translate(0, -35px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, -45px);
+    }
+}
+
 @media screen and (max-width: 765px) {
     .intro-section {
         height: 100vh;
