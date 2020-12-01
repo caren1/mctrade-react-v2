@@ -12,10 +12,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: left;
-
-@media screen and (max-width: 850px) {
-    /* height:100% */
-}
 `
 
 export const TextContainer = styled.div`

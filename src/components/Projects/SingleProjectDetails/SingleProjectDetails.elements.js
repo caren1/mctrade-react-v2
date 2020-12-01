@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SingleProjectDetailsContainer = styled.div`
+export const SingleProjectDetailsContainer = styled.div `
 min-height: 100vh;
 background-color: #041B2D;
 padding: 2em;
@@ -15,7 +15,7 @@ position: relative;
 }
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div `
 max-width: 90%;
 padding: 1em;
 animation: animateLogo 2s ease-out;
@@ -26,11 +26,11 @@ animation: animateLogo 2s ease-out;
 }
 `
 
-export const ProjectIntro = styled.div`
+export const ProjectIntro = styled.div `
 
 `
 
-export const ProjectTitle = styled.h1`
+export const ProjectTitle = styled.h1 `
 color: #E0B084;
 font-size: 30px;
 font-family: 'Lora', serif;
@@ -43,7 +43,7 @@ margin-bottom: 0.2em;
 }
 `
 
-export const ProjectDate = styled.h2`
+export const ProjectDate = styled.h2 `
 color: #ffffff;
 font-size: 25px;
 font-family: 'Lora', serif;
@@ -56,7 +56,7 @@ justify-self: flex-start;
 }
 `
 
-export const ProjectDetails = styled.ul`
+export const ProjectDetails = styled.ul `
 margin-left: 2em;
 text-align: left;
 
@@ -65,14 +65,14 @@ text-align: left;
 }
 `
 
-export const DetailItem = styled.li`
+export const DetailItem = styled.li `
 color: #E0B084;
 font-weight: 200;
 font-family: 'Poppins', sans-serif;
 line-height: 1.5;
 
 `
-export const DetailItemSpan = styled.span`
+export const DetailItemSpan = styled.span `
 color: #ffffff;
 font-size: 14px;
 
@@ -82,7 +82,7 @@ font-size: 14px;
 
 `
 
-export const ProjectGallery = styled.div`
+export const ProjectGallery = styled.div `
 max-width: 100%;
 display: flex;
 flex-wrap: wrap;
@@ -91,7 +91,7 @@ justify-content: center;
 margin-top: 1em;
 `
 
-export const GalleryItem = styled.div`
+export const GalleryItem = styled.div `
 width: 80px;
 height: 100px;
 cursor: pointer;
@@ -104,13 +104,13 @@ flex-basis: 20%;
 }
 `
 
-export const GalleryImage = styled.img`
+export const GalleryImage = styled.img `
 width: 100%;
 height: 100%;
 object-fit: cover;
 `
 
-export const CloseButton = styled.a`
+export const CloseButton = styled.a `
   position: absolute;
   right: 35px;
   top: 25px;

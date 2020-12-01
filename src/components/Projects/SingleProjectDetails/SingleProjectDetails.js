@@ -6,7 +6,6 @@ import { SRLWrapper } from 'simple-react-lightbox'
 const SingleProjectDetails = ({ project, backFromPage }) => {
 
     const { title, date, details, photos } = project;
-    // console.log("PROPSZSZ", id, title, date, details, photos);
 
     useEffect(() => {
         document.getElementById('title').focus()

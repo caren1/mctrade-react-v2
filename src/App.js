@@ -1,4 +1,5 @@
 import React from 'react';
+import SimpleReactLightbox from 'simple-react-lightbox';
 import './App.css'
 
 // REACT ROUTER IMPORTS
@@ -9,22 +10,7 @@ import { Navbar, Home, SingleOfferDetails, FooterComponent, SingleProjectDetails
 
 // DATA IMPORT
 import offerJSONData from './mct-offer.json';
-// import projectsJSONdata.f
-// const example1 = offerJSONData[0];
-
 import projectsJSONData from './mct-projects.json';
-// const example1 = projectsJSONData[0];
-// console.log( "initialzzzzzzzzzzz", example1);
-
-import SimpleReactLightbox from 'simple-react-lightbox';
-
-// Components :
-// - Navbar
-// - HOME : { Info, Offer, Project, Info2 }
-// - Info (O Firmie i Szukamy Współpracy - x2)
-// - Offer -> SingleOffer -> SingleOfferDetails
-// - Projects -> SingleProject -> SingleProjectDetails
-// - Footer -> Contact Form
 
 function App() {
 
@@ -46,8 +32,8 @@ function App() {
     <Switch>
 
       <Route path="/offers/:id">
-      <SimpleReactLightbox>
-        <SingleOfferDetails offer={offer} backFromPage={previousPageHandler} />
+        <SimpleReactLightbox>
+          <SingleOfferDetails offer={offer} backFromPage={previousPageHandler} />
         </SimpleReactLightbox>
       </Route>
 
@@ -65,6 +51,14 @@ function App() {
         </div>
       </Route>
       
+      <Route render={() => (
+        <div className="app">
+          <Navbar />
+          <Home />
+          <FooterComponent />
+        </div>
+      )}></Route>
+
     </Switch>
   );
 }

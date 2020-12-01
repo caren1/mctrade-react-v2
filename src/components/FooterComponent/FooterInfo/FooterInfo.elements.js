@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FooterInfo = styled.div`
+export const FooterInfo = styled.div `
 max-width: 30%;
 padding: 2em;
 line-height: 1.4;
@@ -30,7 +30,7 @@ export const FooterLogo = styled.img `
     max-height: 80px;
 `
 
-export const InfoHeading = styled.h1`
+export const InfoHeading = styled.h1 `
 color: #ffffff;
 font-family: 'Lora', serif;
 font-weight: 200;
@@ -38,14 +38,13 @@ font-size: 16px;
 margin: 1em 0;
 `
 
-export const InfoList = styled.ul`
+export const InfoList = styled.ul `
 margin: 1em 0;
 color: ${props => props.second ? '#ffffff' : '#E0B084' }
 `
 
-export const InfoItem = styled.li`
+export const InfoItem = styled.li `
 list-style-type: none;
 font-family: 'Poppins', sans-serif;
 font-weight: 300;
 `
-

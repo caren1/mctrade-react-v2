@@ -69,8 +69,6 @@ font-weight: 300;
 `
 
 export const OfferIcon = styled.img`
-/* fill: #E0B084;
-    color: #E0B084; */
     width: 100%;
     height: 100%;
 `

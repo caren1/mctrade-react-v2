@@ -1,8 +1,10 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import {
+    Link
+} from 'react-router-dom'
 
 
-export const SingleProjectContainer = styled.div`
+export const SingleProjectContainer = styled.div `
 display: flex;
 justify-content: center;
 align-items: center;
@@ -33,7 +35,7 @@ width: 100%;
 }
 `
 
-export const ProjectImagesContainer = styled.div`
+export const ProjectImagesContainer = styled.div `
 max-width: 50%;
 
 @media screen and (max-width: 500px) {
@@ -41,7 +43,7 @@ max-width: 50%;
 }
 `
 
-export const MainImageContainer = styled.div`
+export const MainImageContainer = styled.div `
 width: 160px;
 height: 160px;
 margin: auto auto;
@@ -51,19 +53,19 @@ display: none;
 }
 `
 
-export const MainImage = styled.img`
+export const MainImage = styled.img `
 max-width: 100%;
 height: 100%;
 object-fit: cover;
 `
 
-export const SubImagesContainer = styled.div`
+export const SubImagesContainer = styled.div `
 display: flex;
 justify-content: center;
 align-items: center;
 `
 
-export const SubImageContainer = styled.div`
+export const SubImageContainer = styled.div `
 width: 50px;
 height: 50px;
 margin: 10px 2px 0 2px;
@@ -78,13 +80,13 @@ margin: 5px;
 }
 `
 
-export const SubImage = styled.img`
+export const SubImage = styled.img `
 width: 100%;
 height: 100%;
 object-fit: cover;
 `
 
-export const ProjectDescriptionContainer = styled.div`
+export const ProjectDescriptionContainer = styled.div `
 padding: 2em;
 
 @media screen and (max-width: 600px) {
@@ -92,7 +94,7 @@ padding: 2em;
 }
 `
 
-export const ProjectTitle = styled.h1`
+export const ProjectTitle = styled.h1 `
 color: #E0B084;
 font-size: 25px;
 font-family: 'Lora', serif;
@@ -104,7 +106,7 @@ margin-bottom: 1em;
 }
 `
 
-export const ProjectDescription = styled.p`
+export const ProjectDescription = styled.p `
 font-family: 'Poppins', sans-serif;
 font-weight: 200;
 font-size: 14px;
@@ -116,7 +118,8 @@ line-height: 1.5;
 }
 `
 
-export const ProjectLinkWrapper = styled(Link)`
+export const ProjectLinkWrapper = styled(Link)
+`
 cursor: pointer;
 height: 100%;
 text-decoration: none;

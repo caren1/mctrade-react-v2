@@ -132,7 +132,7 @@
         height: 100%;
     }
 
-    .intro-mobile > .logo-container > img {
+    .intro-mobile>.logo-container>img {
         animation: animateLogo 1s ease-out;
     }
 }

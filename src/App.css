@@ -1,43 +1,45 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 * {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
+footer {
+  scroll-snap-align: center;
+}
+
+@media screen and (max-width: 750px) {
 
   html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: proximity;
   }
 
   section {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
 
   footer {
-    scroll-snap-align: center;
+    scroll-snap-align: end;
   }
-
-  @media screen and (max-width: 750px) {
-
-    html {
-      scroll-snap-type: proximity;
-    }
-
-    section{
-      scroll-snap-align: start;
-    }
-
-    footer {
-      scroll-snap-align: end;
-    }
-  }
+}

@@ -1,12 +1,9 @@
 import React from 'react'
+import { Info, Offer, Projects } from '../.'
 import './Home.css'
 import mctlogo from '../../assets/icons/mct-logo.svg'
 
-import { Info, Offer, Projects } from '../.'
-
-// import offerJSONData from '../../mct-offer.json';
 import infoJSONData from '../../mct-info.json';
-
 const [ info1, info2 ] = infoJSONData;
 
 
